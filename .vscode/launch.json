@@ -1,0 +1,66 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug on N64",
+      "cwd": "${workspaceFolder}/src/",
+      "request": "launch",
+      "type": "cppdbg",
+      "program": "${workspaceFolder}/build/hello.elf",
+      "preLaunchTask": "build",
+      "debugServerPath": "UNFLoader",
+      "debugServerArgs": "-b -g 0.0.0.0:8080 -r ${workspaceFolder}/hello.z64",
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "filterStdout": false,
+      "filterStderr": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "mips64-elf-gdb",
+      "miDebuggerServerAddress": "127.0.0.1:8080",
+      "serverLaunchTimeout": 10000,
+      "sourceFileMap": {
+        "libdragon": "${workspaceFolder}/libdragon"
+      }
+    },
+
+    {
+      "name": "Attach to N64",
+      "cwd": "${workspaceFolder}/src/",
+      "request": "launch",
+      "type": "cppdbg",
+      "program": "${workspaceFolder}/build/hello.elf",
+      "filterStdout": false,
+      "filterStderr": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "mips64-elf-gdb",
+      "miDebuggerServerAddress": "127.0.0.1:8080",
+      "sourceFileMap": {
+        "libdragon": "${workspaceFolder}/libdragon"
+      }
+    },
+
+    {
+      "name": "Debug on ares",
+      "cwd": "${workspaceFolder}/src/",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/hello.elf",
+      "preLaunchTask": "build",
+      "debugServerPath": "ares",
+      "debugServerArgs": "--setting DebugServer/Enabled=true --setting DebugServer/UseIPv4=true --setting DebugServer/Port=9123--setting Input/Defocus=Block --setting Boot/AwaitGDBClient=true ${workspaceFolder}/hello.z64",
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "filterStdout": false,
+      "filterStderr": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "mips64-elf-gdb",
+      "miDebuggerServerAddress": "127.0.0.1:9123",
+      "sourceFileMap": {
+        "libdragon": "${workspaceFolder}/libdragon"
+      }
+    },
+  ]
+}
