@@ -36,3 +36,7 @@ There are also two vscode launch configurations:
 
 - **Debug on ares:** Will build & start debugging hello world code in ares.
 - **Debug on N64:** Will build & upload hello world code via UNFLoader. Debugging is not fully working. You can instead use `Attach to N64` after running `UNFLoader -b -g 0.0.0.0:8080 -r hello.z64` and booting your ROM.
+
+## TODO
+
+- [ ] Also include tiny3d for ease of use here.
