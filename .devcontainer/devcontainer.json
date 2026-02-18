@@ -13,7 +13,7 @@
     },
     "customizations": {
         "vscode": {
-            "extensions": ["ms-vscode.cpptools"]
+            "extensions": ["ms-vscode.cpptools", "lici.libdragon-vscode"]
         }
     },
     "postAttachCommand": "make -C libdragon install tools-install -j $(getconf _NPROCESSORS_ONLN)"
