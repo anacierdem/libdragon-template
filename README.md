@@ -21,10 +21,19 @@ If you want to upload code via USB, you should have [udev rules installed](https
 
 Clone & open the repository in [vscode](https://code.visualstudio.com/) and run `Dev Containers: Reopen in Container` from the command pallette (CTRL/CMD + SHIFT/OPTION + P).
 
+This will install all dependencies in the container and also execute the following commands for you.
+
 Make sure you have libdragon repository (or you can also clone this repository with `--recurse-submodules`):
 
 ```bash
 git submodule update --init
+```
+
+Build & install libdragon & tiny3d:
+
+```bash
+make -C libdragon install tools-install -j $(getconf _NPROCESSORS_ONLN)
+make -C tiny3d install tools/gltf_importer tools/gltf_importer install -j $(getconf _NPROCESSORS_ONLN)
 ```
 
 Then to build the sample hello world code, run:

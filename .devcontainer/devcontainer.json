@@ -16,5 +16,5 @@
             "extensions": ["ms-vscode.cpptools", "lici.libdragon-vscode"]
         }
     },
-    "postAttachCommand": "make -C libdragon install tools-install -j $(getconf _NPROCESSORS_ONLN)"
+    "postAttachCommand": "git submodule update --init && make -C libdragon install tools-install -j $(getconf _NPROCESSORS_ONLN) && make -C tiny3d install tools/gltf_importer tools/gltf_importer install -j $(getconf _NPROCESSORS_ONLN)"
 }
