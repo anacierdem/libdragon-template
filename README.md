@@ -4,12 +4,12 @@ A libdragon vscode template to quickly have a build environment in a devcontaine
 
 ## Feature compatibility
 
-| Host OS | USB upload | Debug in ares | Audio | USB debugging | Building N64 ROMs | vscode file navigation |
-| --- | ----------- | --- | --- | --- | --- | --- |
-| Linux | ✅ | ✅ | ✅ Pulse Audio | 🚧 TODO | ✅ | ✅ |
-| Windows | ❔ not yet tested + [additional setup](https://learn.microsoft.com/en-us/windows/wsl/connect-usb) required | ❌ | ❌ | ❌ | ✅ | ✅ |
-| MacOS (x86) | ❌ | ❔ not yet tested | ❌ | ❌ | ✅ | ✅ |
-| MacOS (ARM) TODO | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Host OS | USB upload | Debug in ares | Audio | USB debugging | Building N64 ROMs | vscode file navigation | pyrite64
+| --- | ----------- | --- | --- | --- | --- | --- | --- |
+| Linux | ✅ | ✅ | ✅ Pulse Audio | 🚧 TODO | ✅ | ✅ | 🚧 TODO |
+| Windows | ❔ + [additional setup](https://learn.microsoft.com/en-us/windows/wsl/connect-usb) required | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |
+| MacOS (x86) | ❌ | ❔ | ❌ | ❌ | ✅ | ✅ | 🚧 TODO |
+| MacOS (ARM) TODO | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | 🚧 TODO |
 
 ## Prerequisites
 
@@ -46,7 +46,3 @@ There are also two vscode launch configurations:
 
 - **Debug on ares:** Will build & start debugging hello world code in ares.
 - **Debug on N64:** Will build & upload hello world code via UNFLoader. Debugging is not fully working. You can instead use `Attach to N64` after running `UNFLoader -b -g 0.0.0.0:8080 -r hello.z64` and booting your ROM.
-
-## TODO
-
-- [ ] Also include tiny3d for ease of use here.
