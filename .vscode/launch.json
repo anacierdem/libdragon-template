@@ -21,9 +21,6 @@
       "miDebuggerPath": "mips64-elf-gdb",
       "miDebuggerServerAddress": "127.0.0.1:8080",
       "serverLaunchTimeout": 10000,
-      "sourceFileMap": {
-        "libdragon": "${workspaceFolder}/libdragon"
-      }
     },
 
     {
@@ -37,14 +34,11 @@
       "MIMode": "gdb",
       "miDebuggerPath": "mips64-elf-gdb",
       "miDebuggerServerAddress": "127.0.0.1:8080",
-      "sourceFileMap": {
-        "libdragon": "${workspaceFolder}/libdragon"
-      }
     },
 
     {
       "name": "Debug on ares",
-      "cwd": "${workspaceFolder}/src/",
+      "cwd": "${workspaceFolder}",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/hello.elf",
@@ -58,9 +52,6 @@
       "MIMode": "gdb",
       "miDebuggerPath": "mips64-elf-gdb",
       "miDebuggerServerAddress": "127.0.0.1:9123",
-      "sourceFileMap": {
-        "libdragon": "${workspaceFolder}/libdragon"
-      }
     },
   ]
 }
