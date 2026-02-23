@@ -1,5 +1,5 @@
 FROM ghcr.io/anacierdem/n64-unfloader:latest AS unf
-FROM ghcr.io/dragonminded/libdragon:latest AS libdragon
+FROM ghcr.io/dragonminded/libdragon@sha256:54b5b46c866eef3c5a22e1996a1773fd718c96c50fe3209a8cb8fdc91a1565ed AS libdragon
 
 FROM ghcr.io/anacierdem/ares:latest AS ares
 
