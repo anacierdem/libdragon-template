@@ -8,7 +8,7 @@ A libdragon vscode template to quickly have a build environment in a devcontaine
 | --- | ----------- | --- | --- | --- | --- | --- | --- |
 | Linux | ✅ | ✅ | ✅ Pulse Audio | 🚧 TODO | ✅ | ✅ | 🚧 TODO |
 | Windows | ❔ + [additional setup](https://learn.microsoft.com/en-us/windows/wsl/connect-usb) required | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ |
-| MacOS (x86) | ❌ | ❔ | ❌ | ❌ | ✅ | ✅ | 🚧 TODO |
+| MacOS (x86) | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | 🚧 TODO |
 | MacOS (ARM) TODO | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | 🚧 TODO |
 
 ## Prerequisites

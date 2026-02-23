@@ -12,8 +12,8 @@ RUN apt-get install \
 # Setup paths for the libdragon toolchain
 ENV N64_INST=/home/ubuntu/.local
 
-COPY --from=unf /unf/UNFLoader/UNFLoader ${N64_INST}/bin/UNFLoader
-COPY --from=libdragon /n64_toolchain ${N64_INST}
+COPY --from=unf --chown=ubuntu /unf/UNFLoader/UNFLoader ${N64_INST}/bin/UNFLoader
+COPY --from=libdragon --chown=ubuntu /n64_toolchain ${N64_INST}
 RUN cp -r /ares/build/rundir/. ${N64_INST}
 
 USER ubuntu
