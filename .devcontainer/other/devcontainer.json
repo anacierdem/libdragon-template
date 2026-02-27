@@ -1,12 +1,10 @@
 {
-    "build": { "dockerfile": "./Dockerfile", "context": "../" },
+    "build": { "dockerfile": "../Dockerfile", "context": "../" },
     "runArgs": [
-        "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
-        "-v", "${localEnv:XAUTHORITY}:${localEnv:XAUTHORITY}:ro",
-        "-v", "${localEnv:XDG_RUNTIME_DIR}/pulse/native:${localEnv:XDG_RUNTIME_DIR}/pulse/native",
         "--device=/dev/bus/usb"
     ],
     "containerEnv": {
+        "WS": "${workspaceFolder}",
         "DISPLAY": "${localEnv:DISPLAY}",
         "PULSE_SERVER": "${localEnv:XDG_RUNTIME_DIR}/pulse/native",
         "XAUTHORITY": "${localEnv:XAUTHORITY}"

@@ -19,7 +19,7 @@ If you want to upload code via USB, you should have [udev rules installed](https
 
 ## Usage
 
-Clone & open the repository in [vscode](https://code.visualstudio.com/) and run `Dev Containers: Reopen in Container` from the command pallette (CTRL/CMD + SHIFT/OPTION + P).
+Clone & open the repository in [vscode](https://code.visualstudio.com/) and run `Dev Containers: Reopen in Container` from the command pallette (CTRL/CMD + SHIFT/OPTION + P). Then select your OS from available container settings.
 
 This will install all dependencies in the container and also execute the following commands for you.
 
