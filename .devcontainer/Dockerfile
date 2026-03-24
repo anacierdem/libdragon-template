@@ -8,6 +8,7 @@ FROM ghcr.io/anacierdem/ares:latest AS ares
 RUN apt-get update && apt-get install \
     build-essential \
     git \
+    curl \
     # UNF dependencies
     libftdi1-dev \
     -yq
