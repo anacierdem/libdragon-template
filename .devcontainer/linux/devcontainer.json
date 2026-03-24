@@ -6,6 +6,9 @@
         "-v", "${localEnv:XDG_RUNTIME_DIR}/pulse/native:${localEnv:XDG_RUNTIME_DIR}/pulse/native",
         "--device=/dev/bus/usb"
     ],
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host/home,type=bind,consistency=cached"
+    ],
     "containerEnv": {
         "DISPLAY": "${localEnv:DISPLAY}",
         "PULSE_SERVER": "${localEnv:XDG_RUNTIME_DIR}/pulse/native",

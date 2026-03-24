@@ -2,6 +2,9 @@
     "build": { "dockerfile": "../Dockerfile", "context": "../" },
     "runArgs": [
     ],
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host/home,type=bind,consistency=cached"
+    ],
     "containerEnv": {
     },
     "customizations": {
