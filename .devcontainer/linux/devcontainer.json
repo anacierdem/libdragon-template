@@ -7,7 +7,6 @@
         "--device=/dev/bus/usb"
     ],
     "containerEnv": {
-        "WS": "${workspaceFolder}",
         "DISPLAY": "${localEnv:DISPLAY}",
         "PULSE_SERVER": "${localEnv:XDG_RUNTIME_DIR}/pulse/native",
         "XAUTHORITY": "${localEnv:XAUTHORITY}"

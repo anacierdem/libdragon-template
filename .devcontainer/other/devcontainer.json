@@ -1,13 +1,8 @@
 {
     "build": { "dockerfile": "../Dockerfile", "context": "../" },
     "runArgs": [
-        "--device=/dev/bus/usb"
     ],
     "containerEnv": {
-        "WS": "${workspaceFolder}",
-        "DISPLAY": "${localEnv:DISPLAY}",
-        "PULSE_SERVER": "${localEnv:XDG_RUNTIME_DIR}/pulse/native",
-        "XAUTHORITY": "${localEnv:XAUTHORITY}"
     },
     "customizations": {
         "vscode": {
