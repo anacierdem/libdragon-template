@@ -21,7 +21,7 @@ If you want to upload code via USB, you should have [udev rules installed](https
 
 Clone & open the repository in [vscode](https://code.visualstudio.com/) and run `Dev Containers: Reopen in Container` from the command pallette (CTRL/CMD + SHIFT/OPTION + P). Then select your OS from available container settings.
 
-This will install all dependencies in the container and also execute the following commands for you.
+This will install all dependencies in the container and also execute the following commands for you. First run might take a while as it will download quite some stuff.
 
 Make sure you have libdragon repository (or you can also clone this repository with `--recurse-submodules`):
 
