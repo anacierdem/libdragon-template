@@ -46,3 +46,9 @@ There are also two vscode launch configurations:
 
 - **Debug on ares:** Will build & start debugging hello world code in ares.
 - **Debug on N64:** Will build & upload hello world code via UNFLoader. Debugging is not fully working. You can instead use `Attach to N64` after running `UNFLoader -b -g 0.0.0.0:8080 -r hello.z64` and booting your ROM.
+
+### Access to your host files
+
+By default devcontainer have your host homes attached at `/var/home`. You can use this location to copy/link any important configurations you have for your user into the container's `/home/ubuntu`. You can use [`dotfiles`](https://code.visualstudio.com/docs/devcontainers/containers#_personalizing-with-dotfile-repositories) to do so.
+
+Out of the box, devcontainer will also create a volume for the container user (i.e `home/ubuntu`) so that it can persist bash history and such across container recreations.

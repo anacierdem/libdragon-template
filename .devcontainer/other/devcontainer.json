@@ -2,8 +2,9 @@
     "build": { "dockerfile": "../Dockerfile", "context": "../" },
     "runArgs": [
     ],
-    "mounts": [
-        "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host/home,type=bind,consistency=cached"
+     "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/var/home/${localEnv:USER}${localEnv:USERNAME},type=bind,consistency=cached",
+        "source=libdragon-template-home,target=/home/ubuntu/,type=volume"
     ],
     "containerEnv": {
     },

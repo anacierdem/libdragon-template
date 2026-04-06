@@ -7,7 +7,8 @@
         "--device=/dev/bus/usb"
     ],
     "mounts": [
-        "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host/home,type=bind,consistency=cached"
+        "source=${localEnv:HOME},target=/var/home/${localEnv:USER},type=bind,consistency=cached",
+        "source=libdragon-template-home,target=/home/ubuntu/,type=volume"
     ],
     "containerEnv": {
         "DISPLAY": "${localEnv:DISPLAY}",
